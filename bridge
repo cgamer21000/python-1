@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+import colors as c
+print(c.clear + c.green + '''
+who would cross the bridge of death
+must answer me these questions three
+'ere the other side he see.''' + c.reset)
+
+def prompt(question):
+    print(c.red + question + c.reset)
+    answer = input("> " + c.base3).lower().strip()
+    print(c.reset)
+    return answer
+
+def live():
+    print('you live')
+
+def die():
+    print('you die')
+
+
+
+name = prompt('what is your name')
+
+
+quest = prompt('what is your name')
+
+
+if name == 'lancelot' or name == 'galahad':
+    color = prompt('what is your favorite color')
+    if color == 'blue':
+        live()
+    else:
+        die()
+
+elif name == 'robin':
+    capital = prompt('what is the capital of assyria')
+    if capital in ['assur','ashur']:
+        live()
+    else:
+        die()
+
+elif name == 'arthur':
+    speed = prompt('what is the air speed velocity of an unladen swallow')
+    if speed in ['24mph']:
+        live()
+    elif 'african or european' in speed:
+        print('The bridgekeeper dies')
+        live()
+    else:
+        die()
+
