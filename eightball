@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+
+import random
+import colors as c
+
+print(c.clear)
+print(c.red + '''
+welcome to the amazing magic eightball!
+ask a question any question
+''' + c.reset)
+
+answers = [
+    'it is certian.',
+    'yes.',
+    'signs say no.',
+    'too confusing try again.',
+    'be realistic.',
+    'no.',
+    'better not tell you now.',
+    'shuting down.',
+    'dont count on it.',
+    'you stupid.',
+    'shut up.',
+    'certainly.',
+    'so far yes.',
+    'no not really.',
+    'out look good.',
+    'i cant hear you try again.',
+    'dont get your hopes up.',
+    'its a garente.',
+    'dont get too excited.',
+    'it looks like a yes.',
+
+
+]
+
+while True:
+    question = input('--> ' + c.yellow)
+    if question == 'bye' or question == 'goodbye':
+        print('goodbye')
+        exit()
+    elif 'love' in question:
+        print('do i look like cupid to you?')
+    elif 'die' in question or 'death' in question or 'dead' in question:
+        print("such grim questions don't deserve an answer,yet.")
+    else:
+     answer = random.choice(answers)
+     print(c.random_color() + answer + c.reset)

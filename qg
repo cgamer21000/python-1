@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+import colors as c
+from utils import prompt
+
+print(c.clear + c.magenta + 'welcome to the pink fluffy unicorns quiz game' + c.reset)
+
+color = prompt('what is the color of the unicorn fur')
+if color == "i dont care":
+    print('you are correct')
+dancing = prompt('what is the unicorn dancing on')
+if dancing == "what do you mean":
+    print('you are good at this')
+texture = prompt('use one word to describe the texture of thier magical fur')
+if texture == "you're not my dad":
+    print('you got all the answers right congadgulations')
+
