@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+import colors as c 
+from utils import ask
+
+print(c.clear + c.green + 'welcome to mad libs enter your your answer')
+
+text = '''
+one day i was walking in the {weather},
+when all of the sudden {video_game_caracter}appears
+and gives me something that makes me have thier abillites.
+Then a bunch of {adjective} people walk up to me.
+they try to beat me up but i use my super
+powers to defeat them.
+'''
+
+
+
+
+words = {
+    "weather" : {},
+    "video_game_caracter" : {},
+    "adjective" : {},
+}
+
+
+answers = {}
+
+for key in words:
+    answer = ask("Enter " + key + ": ")
