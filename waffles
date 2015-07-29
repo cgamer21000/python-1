@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+
+import colors as c 
+
+print('do you like waffles?')
+
+waffles = input('> ')
+
+if waffles == 'yes':
+    print('yaaay')
+else:
+    print('you suck')
+    exit()
+
+print('do you like pancakes?')
+
+pancakes = input('> ')
+
+if pancakes == 'yes':
+    print('yaaay')
+
+else:
+    print('you suck')
+    exit()
+
+print('do you like french toast?')
+
+pancakes = input('> ')
+
+if pancakes == 'yes':
+    print('yaaay')
+
+else:
+    print('you suck')
+    exit()
+

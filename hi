@@ -2,4 +2,7 @@
 
 import colors as c
 
-print(c.blue + 'Hello ' + c.cyan + 'World!')
+print("Hello there what is your name?")
+name = input("> ") 
+print("Well, " + name + " nice to meet you.")
+
