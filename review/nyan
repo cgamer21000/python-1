@@ -3,3 +3,7 @@
 import colors as c
 
 
+while True: 
+    print(c. + 'nyan' + c.reset, end=' ')
+
+
